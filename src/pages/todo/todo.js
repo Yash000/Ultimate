@@ -1,5 +1,4 @@
 import React from 'react'
-import { isAccordionItemSelected } from 'react-bootstrap/esm/AccordionContext'
 import './todo.css'
 
 const Todo = () => {
