@@ -10,7 +10,7 @@ const Todo = () => {
 
     const [items,setItems]=React.useState([""])
     function handleClick(){
-        setItems(x=>([...x,text]))
+        setItems(x=>([...x,text.add]))
     }
     const showItems=items.map(x=><h2>{x}</h2>)
 
