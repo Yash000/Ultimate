@@ -26,7 +26,7 @@ const Todo = () => {
 
     return (
         <div className='Main'>
-            Todo
+        
             <br />
             <InputGroup className="mb-3">
             
