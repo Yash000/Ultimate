@@ -12,6 +12,7 @@ import About from './components/about';
 import Calc from './pages/calc';
 import Home from './pages/index';
 import Todo from './pages/todo/todo';
+import FBDB from './pages/fbdb/fbdb';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 						<Nav.Link as={Link} to="/about">About</Nav.Link>
 						<Nav.Link as={Link} to="/calc">Calc</Nav.Link>
 						<Nav.Link as={Link} to="/todo">Todo</Nav.Link>
+						<Nav.Link as={Link} to="/fbdb">fbdb</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>
@@ -32,6 +34,7 @@ function App() {
 				<Route path='/about' element={<About/>}/>
 				<Route path='/calc' element={<Calc/>}/>
 				<Route path='/todo' element={<Todo/>}/>
+				<Route path='/fbdb' element={<FBDB/>}/>
 				<Route path='/' element={<Home/>}/>
 			</Routes>
 			</BrowserRouter>

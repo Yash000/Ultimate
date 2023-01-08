@@ -5,16 +5,15 @@ import {Button,Card,InputGroup,Form} from 'react-bootstrap';
 
 
 const Todo = () => {
-
     const [text, setText] = React.useState({
         add: ""
     })
 
-    const [items, setItems] = React.useState([])
+    const [items, setItems] = React.useState()
     function handleClick() {
-        setItems(x => (text.add==""?[...x]: [...x, text.add]))
+        setItems(x => (text.add==""?[...x]: [ text.add,...x]))
     }
-    const showItems = items.map(x => <Card body>{x}</Card>)
+    const showItems = items.map(x => <Card body >{x}</Card>)
 
 
     function handleChange(event) {
