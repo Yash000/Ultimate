@@ -4,12 +4,12 @@ import 'firebase/compat/database';
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: "ultimate-react-20e74.firebaseapp.com",
-    databaseURL: "https://ultimate-react-20e74-default-rtdb.firebaseio.com",
-    projectId: "ultimate-react-20e74",
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId:process.env.REACT_APP_FIREBASE_PROJECT_ID,
     storageBucket: "ultimate-react-20e74.appspot.com",
     messagingSenderId: "938334867456",
-    appId: "1:938334867456:web:ee34b3249c7678057848e5",
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
     measurementId: "G-EJLC59YY11"
 };
 firebase.initializeApp(firebaseConfig);
@@ -36,7 +36,8 @@ export default function FBDB() {
     }
     return(
         <div>
-        <h1 onClick={()=>setv(65)}>Click me</h1>
+        <h1 onClick={()=>setv(65)}>Click me 65</h1>
+        <h1 onClick={()=>setv(64)}>Click me 64</h1>
         <h1 onClick={click}>{show}</h1>
         </div>
     )
